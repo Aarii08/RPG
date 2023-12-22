@@ -4,7 +4,7 @@ public abstract class Human extends Living {
 
 	public Human(String name, String weapon) {
 		// TODO 自動生成されたコンストラクター・スタブ
-		super(name, weapon);
+		super(name, weapon);s
 	}
 	
 	@Override

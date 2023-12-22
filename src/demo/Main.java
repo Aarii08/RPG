@@ -2,7 +2,7 @@ package demo;
 
 import bases.Human;
 import humans.Brave;
-import humans.Fighter;
+import humans.Fighter;s
 
 public class Main {
 

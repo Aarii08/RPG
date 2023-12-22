@@ -3,7 +3,7 @@ package bases;
 public abstract class Monster extends Living {
 
 	public Monster(String name, String weapon) {
-		// TODO 自動生成されたコンストラクター・スタブ
+		// TODO 自動生成されたコンストラクター・スタブs
 		super(name, weapon);
 	}
 	
