@@ -1,5 +1,7 @@
 package bases;
 
+import utils.Dice;
+
 public abstract class Monster extends Living {
 
 	public Monster(String name, String weapon) {
@@ -9,9 +11,9 @@ public abstract class Monster extends Living {
 	
 	@Override
 	public void attack(Living target) {
-		int damage = target.(get(1, 10)) * offensive;
-		target = hp - damage;
-		System.out.println("「" + monster.getName() + "」が「" + monster.getWeapon() + "」で攻撃！「" + human.getName() + "」に" + damage + "のダメージを与えた。");
+		int damage = Dice.get(1, 10) * this.offensive;
+		target.setHp(target.getHp() - damage);
+		System.out.println("「" + this.name + "」が「" + this.weapon + "」で攻撃！「" + target.getName() + "」に" + damage + "のダメージを与えた。");
 	}
 
 }

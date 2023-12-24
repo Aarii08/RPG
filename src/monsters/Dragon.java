@@ -1,16 +1,16 @@
 package monsters;
 
-import utils.Dice;
 import bases.Monster;
+import utils.Dice;
 
 public class Dragon extends Monster {
 
-	public Dragon(String name, String weapon, int hp, int offensive) {
+	public Dragon(String name, String weapon) {
 		// TODO 自動生成されたコンストラクター・スタブ
 		super(name, weapon);
 		
-		hp = Dice.get(270, 330);
-		offensive = Dice.get(12, 18);
+		this.setHp(Dice.get(270, 330));
+		this.setHp(Dice.get(12, 18));
 	}
 
 }

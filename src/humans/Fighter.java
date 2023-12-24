@@ -5,12 +5,12 @@ import utils.Dice;
 
 public class Fighter extends Human{
 
-	public Fighter(String name, String weapon, int hp, int offensive) {
+	public Fighter(String name, String weapon) {
 		// TODO 自動生成されたコンストラクター・スタブ
 		super(name, weapon);
 		
-		hp = Dice.get(240, 300);
-		offensive = Dice.get(17, 23);
+		this.setHp(Dice.get(240, 300));
+		this.setOffensive(Dice.get(17, 23));
 	}
 
 }

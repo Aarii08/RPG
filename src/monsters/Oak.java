@@ -5,12 +5,12 @@ import utils.Dice;
 
 public class Oak extends Monster {
 
-	public Oak(String name, String weapon, int hp, int offensive) {
+	public Oak(String name, String weapon) {
 		// TODO 自動生成されたコンストラクター・スタブ
 		super(name, weapon);
 		
-		hp = Dice.get(170, 230);
-		offensive = Dice.get(9, 15);
+		this.setHp(Dice.get(170, 230));
+		this.setOffensive(Dice.get(9, 15));
 	}
 
 }

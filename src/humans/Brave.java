@@ -3,14 +3,13 @@ package humans;
 import bases.Human;
 import utils.Dice;
 
-public class Brave extends Human {s
+public class Brave extends Human {
 
-	public Brave(String name, String weapon, int hp, int offensive) {
+	public Brave(String name, String weapon) {
 		// TODO 自動生成されたコンストラクター・スタブ
 		super(name, weapon);
 		
-		hp = Dice.get(170, 230);
-		offensive = Dice.get(7, 13);
+		this.setHp(Dice.get(170, 230));
+		this.setOffensive(Dice.get(7, 13));
 	}
-
 }
